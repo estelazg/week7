@@ -4,51 +4,1380 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <title>index</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+    <main>
+      <section class="index-banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h2
+                class="fs-8 fs-lg-7 fw-bold text-primary-100 bg-primary-10 rounded-1 p-2 d-inline-block mb-3"
+              >
+                ZOBAA 旅行推薦平台
+              </h2>
+              <h1 class="fs-4 fs-lg-1 fw-bold text-primary-100 mb-2">
+                <span class="d-block d-lg-inline"> 用旅行，</span
+                ><span> 收藏世界的樣子</span>
+              </h1>
+              <p class="fs-9 fs-lg-7 text-primary-80 fw-bold mb-6">
+                <span class="d-block d-lg-inline"
+                  >ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比</span
+                ><span>價到訂購，一次完成你的完美出遊計畫。</span>
+              </p>
+              <form class="position-relative w-100">
+                <span
+                  class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary-60"
+                >
+                  search
+                </span>
+                <input
+                  type="search"
+                  class="form-control py-5 rounded-1 ps-7"
+                  id="search-lg"
+                  placeholder="搜尋景點、地點或城市"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary-100 position-absolute top-0 end-0 m-2 fs-8 fw-bold py-3 px-4"
+                >
+                  開始探索旅程
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section class="recommend py-7">
+        <div
+          class="container text-white d-lg-flex justify-content-between align-items-center"
+        >
+          <h3 class="fs-4 fs-lg-1 fw-bold mb-6">你的<br />專屬推薦</h3>
+          <div class="fs-7 fw-bold">
+            <p class="mb-lg-6 mb-3">
+              來看我們的精選推薦行程，滿意度高達 99.2%<br />
+              給自己一個難忘的旅遊行程吧！
+            </p>
+            <a href="" class="text-white">
+              查看全部行程<span
+                class="material-icons-outlined align-bottom ms-2"
+              >
+                arrow_forward
+              </span></a
+            >
+          </div>
+        </div>
+        <div class="container d-flex gap-4 overflow-x-auto">
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              alt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">峇里島渡假漫遊</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend-1.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              object-fit-coverlt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">日本深度賞櫻計畫</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5 w-100 hover-show d-lg-none"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend-2.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              object-fit-coverlt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">紐西蘭雪山探險</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5 w-100 hover-show d-lg-none"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend-3.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              object-fit-coverlt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">摩洛哥迷幻之旅</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5 w-100 hover-show d-lg-none"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-lg-11 py-7 deco position-relative">
+        <div class="position-absolute start-0 top-50 d-none d-lg-block">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/deco-text.svg"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div
+            class="row flex-lg-row-reverse justify-content-between align-items-lg-center"
+          >
+            <div class="col-lg-4 mb-7 d-lflex justify-content-lg-end">
+              <div>
+                <h3 class="fs-4 fs-lg-1 fw-bold text-primary-100">
+                  ZOBAA!<br /><span class="text-nowrap">踏上旅程的</span
+                  ><br />第一站
+                </h3>
+                <p class="fs-9 fs-lg-8 fw-bold text-primary-60">
+                  探索最熱門的旅遊主題，<br />
+                  從旅人必備攻略到獨家優惠，<br />
+                  全都為你精挑細選。
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-1.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-2.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row offset-row">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-3.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-4.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-10 bg-shape mb-">
+        <div class="container">
+          <div>
+            <div class="position-relative">
+              <div class="position-absolute map-years">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/deco-text-1.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h3 class="fs-4 fs-lg-1 fw-bold text-primary-100">
+              今年旅行的<br />靈感地圖
+            </h3>
+          </div>
+          <div>
+            <ul
+              class="nav nav-pills mb-3 map-btn-bg gap-2 fs-8 fw-bold"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link btn-white active"
+                  id="pills-all-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-all"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-all"
+                  aria-selected="true"
+                >
+                  全部
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-asia-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-asia"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-asia"
+                  aria-selected="false"
+                >
+                  亞洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-europe-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-europe"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-europe"
+                  aria-selected="false"
+                >
+                  歐洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-america-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-america"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-america"
+                  aria-selected="false"
+                >
+                  美洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-oceania-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-oceania"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-oceania"
+                  aria-selected="false"
+                >
+                  大洋洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-africa-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-africa"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-africa"
+                  aria-selected="false"
+                >
+                  非洲
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-all"
+                role="tabpanel"
+                aria-labelledby="pills-all-tab"
+                tabindex="0"
+              >
+                <div
+                  class="row flex-nowrap overflow-x-auto pt-10 over-width align-items-stretch"
+                >
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >1
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-1.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              日本京都
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            走進四季交織的文化時光
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >2
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-2.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              南韓首爾
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            從街邊美食到韓劇場景
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >3
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-3.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              歐洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              法國巴黎
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            在藝術與咖啡香中迷路
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            走進瑪黑區，最容易與巴黎風格不期而遇 ☕️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >4
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-4.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              大洋洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              澳洲雪梨
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            城市與大自然的交會
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >5
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-5.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              非洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              埃及開羅
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            穿越千年時光的沙漠冒險
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-asia"
+                role="tabpanel"
+                aria-labelledby="pills-asia-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >1
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-1.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              日本京都
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            走進四季交織的文化時光
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >2
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-2.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              南韓首爾
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            從街邊美食到韓劇場景
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-europe"
+                role="tabpanel"
+                aria-labelledby="pills-europe-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >3
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-3.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              歐洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              法國巴黎
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            在藝術與咖啡香中迷路
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            走進瑪黑區，最容易與巴黎風格不期而遇 ☕️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-oceania"
+                role="tabpanel"
+                aria-labelledby="pills-oceania-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >4
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-4.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              大洋洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              澳洲雪梨
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            城市與大自然的交會
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-america"
+                role="tabpanel"
+                aria-labelledby="pills-america-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-africa"
+                role="tabpanel"
+                aria-labelledby="pills-africa-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >5
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-5.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              非洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              埃及開羅
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            穿越千年時光的沙漠冒險
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-lg-11 py-7">
+          <div class="position-relative">
+            <h3 class="fs-4 fs-lg-1 text-primary-100 fw-bold mb-7 mb-lg-10">
+              搜尋墨爾本嗎？<br />
+              來點行程參考！
+            </h3>
+            <div class="position-absolute z-n1 hashtag top-0 star-0">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-%23.svg"
+                alt="裝飾圖案"
+              />
+            </div>
+          </div>
+          <div class="row flex-nowrap overflow-x-auto">
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-1.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-2">
+                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >即買即用</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="../assets/images/star.svg" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT$ 4,220</span
+                    >
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 5,220</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-2.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-6">
+                    無尾熊動物園＋企鵝歸巢雙享之旅
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >即買即用</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >7 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="../assets/images/star.svg" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT$ 3,890
+                    </span>
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 4,920</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-3.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-2">
+                    大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >中文導覽</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="../assets/images/star.svg" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT$ 3,690
+                    </span>
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 4,500</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-4.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-2">
+                    墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >專業導覽</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >3 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="../assets/images/star.svg" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT6$ 1,280
+                    </span>
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 2,480</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-bottom overflow-hidden">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-title-1.svg"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-title-2.svg"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-title-3.svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="bg-primary-40 position-relative overflow-hidden">
+        <div class="select-img d-none d-lg-block">
+          <div class="position-absolute star-0 top-0 top z-3">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-up.svg"
+              alt="裝飾圖片"
+            />
+          </div>
+          <div class="position-absolute top-50 middle z-1">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-line.svg"
+              alt="裝飾圖片"
+            />
+          </div>
+          <div class="position-absolute end-0 bottom-0 bottom z-1">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-down.svg"
+              alt="裝飾圖片"
+            />
+          </div>
+        </div>
+        <div class="container py-7 py-lg-11">
+          <div class="row px-3">
+            <div class="col-12 position-relative z-2">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/card.png?raw=true"
+                alt=""
+                class="w-100 mb-2 mb-lg-6"
+              />
+            </div>
+            <div class="rounded-4 select-bg p-6 position-relative z-2">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h4
+                    class="fs-6 fs-lg-2 fw-bold text-primary-100 mb-4 mb-lg-6"
+                  >
+                    為什麼選擇 ZOBAA ?
+                  </h4>
+                  <p class="fs-9 fs-lg-8 mb-6 mb-lg-6">
+                    不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br />
+                    ZOBΛA 希望你能放心探索世界，把記憶留給旅程本身。
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary-120 d-flex justify-content-between rounded-pill py-4 px-5 d-none d-lg-block"
+                  >
+                    <span class="fs-9 fs-lg-8 fw-bold"
+                      >立即探索我們的精心旅程</span
+                    >
+                    <span
+                      class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                    >
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-lg-flex">
+                    <div class="rounded-4 bg-white p-6 mb-4 me-4 w-100 py-lg-9">
+                      <span class="d-block fs-4 fw-bold text-primary-100"
+                        >8 年
+                        <img
+                          src="/assets/images/cross.svg"
+                          alt="+"
+                          class="align-top"
+                      /></span>
+                      <span class="fs-9 text-primary-80 fw-bold"
+                        >旅遊企劃經驗</span
+                      >
+                    </div>
+                    <div class="rounded-4 bg-white p-6 mb-4 w-100 py-lg-9">
+                      <span class="d-block fs-4 fw-bold text-primary-100"
+                        >30,000
+                        <img
+                          src="/assets/images/cross.svg"
+                          alt="+"
+                          class="align-top"
+                      /></span>
+                      <span class="fs-9 text-primary-80 fw-bold"
+                        >旅人五星好評</span
+                      >
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5 d-lg-none d-block"
+                  >
+                    <span class="fs-9 fs-lg-8 fw-bold"
+                      >立即探索我們的精心旅程</span
+                    >
+                    <span
+                      class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                    >
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <%- include('./layout/footer'); -%>
 

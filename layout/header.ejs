@@ -1,4 +1,147 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav class="navbar bg-transparent py-3 py-lg-4 fixed-top" id="mainNav">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+      <a class="navbar-brand p-0 me-6" href="index.htm">
+        <img src="/assets/images/logo.svg" alt="#ZOBAA!" />
+      </a>
+      <!-- pc -->
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary-60"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control py-2 rounded-1 ps-7 search-lg"
+          id="search-lg"
+          placeholder="搜尋景點、地點或城市"
+        />
+      </form>
+    </div>
+    <!-- PHONE -->
+    <div class="position-absolute start-0 end-0 px-4 z-1 bg-white">
+      <div class="collapse" id="collapseExample">
+        <div class="d-flex align-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control py-2 rounded-1 ps-7"
+              id="search-lg"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn border-0 p-2"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+          >
+            <span class="material-icons-outlined align-bottom"> close </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- pnone end -->
+
+    <button
+      type="button"
+      class="btn p-2 border-0 d-lg-none"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+    >
+      <span class="material-icons-outlined align-bottom"> search </span>
+    </button>
+    <button type="button" class="btn py-2 border-0">
+      <span class="position-relative">
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning cart-tag p-0"
+        >
+          2
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </span>
+      <span class="material-icons-outlined align-bottom"> shopping_cart </span>
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary-100 d-none d-lg-block fs-8 fw-bold py-4 px-6 border-0"
+    >
+      登入 / 註冊
+    </button>
+    <button
+      class="btn border-0 p-2 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+    >
+      <span class="material-icons-outlined"> menu </span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end px-6"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close pt-6"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column justify-content-between h-100">
+          <div>
+            <div
+              class="d-flex d-inline-block align-items-center border-bottom pb-4 mb-4"
+            >
+              <span
+                class="material-icons-outlined fs-4 p-1 text-primary-10 rounded-circle bg-primary-40 align-items-center me-1"
+              >
+                account_circle
+              </span>
+              <p>
+                <span class="fs-8 fw-bold text-primary-100 d-block">訪客</span
+                ><span>未登入</span>
+              </p>
+            </div>
+            <div>
+              <h4 class="fs-7 fw-bold text-primary-100">歡迎來到 ZOBAA</h4>
+              <p class="fs-8 text-secondary-80">
+                加入會員即可立即訂購、收藏行程，並享相關優惠好禮。
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary-100 w-100 fs-8 fw-bold py-4 rounded-4 mb-6"
+          >
+            登入 / 註冊
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("mainNav");
+    if (window.scrollY > 50) {
+      // 捲動超過 50px 才變色
+      navbar.classList.add("bg-white", "shadow-sm");
+      navbar.classList.remove("bg-transparent");
+    } else {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("bg-white", "shadow-sm");
+    }
+  });
+</script>

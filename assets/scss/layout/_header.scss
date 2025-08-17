@@ -1,4 +1,16 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.cart-tag {
+  width: 16px;
+  height: 16px;
+  line-height: 1.333;
+}
+
+.search-lg {
+  width: 400px;
+}
+
+@media (min-width: 992px) {
+  .bg-lg-transparent {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+  }
 }

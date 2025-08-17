@@ -1,3 +1,126 @@
-.index-title {
-  font-size: 100px;
+.index-banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/hero-bg.png?raw=true);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 112px;
+}
+.recommend {
+  background-color: #221f1e;
+  .card {
+    width: 277px;
+  }
+}
+
+.hover-show-container:hover .hover-show {
+  display: none;
+}
+
+.img-mask {
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-years {
+  top: -70px;
+  left: 25%;
+}
+.map-btn-bg {
+  .nav-link {
+    background-color: white;
+    padding: 8px 16px;
+  }
+}
+.map {
+  img {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+  }
+}
+
+.number {
+  font-size: 200px;
+  font-style: italic;
+  font-weight: 400;
+  color: #dfd2cd;
+  transform: translate(0, -45%);
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-shape {
+  background: #f8f5f2;
+  clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.over-width {
+  margin-right: calc(-50vw + 50% + 24px);
+}
+
+.hashtag {
+  transform: translate(-35%, -45%);
+}
+
+.select-bg {
+  background-color: rgba(243, 238, 236, 0.5);
+}
+
+.select-img {
+  .top {
+    transform: translate(-50%, -50%);
+  }
+  .middle {
+    transform: translate(-24%, 0%);
+  }
+  .bottom {
+    transform: translate(30%, 60%);
+  }
+}
+
+@media (min-width: 992px) {
+  .recommend .card {
+    width: 25%;
+    max-width: 416px;
+    height: 600px;
+    transition: width 0.5s;
+    &:hover {
+      width: 100%;
+    }
+  }
+  .offset-row {
+    transform: translateX(80px);
+  }
+  .hover-show-container:hover .hover-show {
+    display: flex !important;
+  }
+  .deco {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/deco-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .map-years {
+    top: -50px;
+    left: 34%;
+  }
+  .map {
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+    }
+  }
+  .bg-shape {
+    background: #f8f5f2;
+    clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
+    padding-top: 152px;
+    padding-bottom: 152px;
+  }
 }
