@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>index</title>
+    <script type="module" crossorigin src="/week7/assets/main-5hVpWE-s.js"></script>
+    <link rel="stylesheet" crossorigin href="/week7/assets/main-Cfn4rYN0.css">
+  </head>
+  <body>
+    <nav class="navbar bg-transparent py-3 py-lg-4 fixed-top" id="mainNav">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+      <a class="navbar-brand p-0 me-6" href="index.htm">
+        <img src="data:image/svg+xml,%3csvg%20width='180'%20height='30'%20viewBox='0%200%20180%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.9175%2012.4149L23.7931%2017.662H28.1203V21.9211H22.8732L21.6466%2027.7133H17.115L18.3416%2021.9211H12.1405L10.9139%2027.7133H6.41634L7.64294%2021.9211H2.49805V17.662H8.56289L9.68727%2012.4149H4.57645V8.15591H10.6072L11.7997%202.49994H16.2973L15.1047%208.15591H21.3059L22.4984%202.49994H27.03L25.8375%208.15591H30.1987V12.4149H24.9175ZM20.3859%2012.4149H14.1848L13.0604%2017.662H19.2615L20.3859%2012.4149Z'%20fill='%234A3830'/%3e%3cpath%20d='M48.5295%2023.6928H59.2282V27.7133H43.0098V24.0335L53.6403%207.95148H43.0098V3.93097H59.2282V7.61076L48.5295%2023.6928Z'%20fill='%234A3830'/%3e%3cpath%20d='M75.0094%2027.9518C72.7834%2027.9518%2070.739%2027.4294%2068.8764%2026.3845C67.0138%2025.3396%2065.5374%2023.8972%2064.447%2022.0573C63.3567%2020.1947%2062.8116%2018.0936%2062.8116%2015.754C62.8116%2013.4371%2063.3567%2011.3587%2064.447%209.5188C65.5374%207.65619%2067.0138%206.20244%2068.8764%205.15756C70.739%204.11269%2072.7834%203.59025%2075.0094%203.59025C77.2582%203.59025%2079.3025%204.11269%2081.1424%205.15756C83.005%206.20244%2084.4701%207.65619%2085.5377%209.5188C86.628%2011.3587%2087.1732%2013.4371%2087.1732%2015.754C87.1732%2018.0936%2086.628%2020.1947%2085.5377%2022.0573C84.4701%2023.8972%2083.005%2025.3396%2081.1424%2026.3845C79.2798%2027.4294%2077.2355%2027.9518%2075.0094%2027.9518ZM75.0094%2023.6928C76.4404%2023.6928%2077.7011%2023.3748%2078.7914%2022.7388C79.8817%2022.0801%2080.7335%2021.1488%2081.3468%2019.9449C81.9601%2018.741%2082.2668%2017.344%2082.2668%2015.754C82.2668%2014.164%2081.9601%2012.7784%2081.3468%2011.5972C80.7335%2010.3933%2079.8817%209.47337%2078.7914%208.83736C77.7011%208.20134%2076.4404%207.88334%2075.0094%207.88334C73.5784%207.88334%2072.3063%208.20134%2071.1933%208.83736C70.103%209.47337%2069.2512%2010.3933%2068.6379%2011.5972C68.0246%2012.7784%2067.718%2014.164%2067.718%2015.754C67.718%2017.344%2068.0246%2018.741%2068.6379%2019.9449C69.2512%2021.1488%2070.103%2022.0801%2071.1933%2022.7388C72.3063%2023.3748%2073.5784%2023.6928%2075.0094%2023.6928Z'%20fill='%234A3830'/%3e%3cpath%20d='M104.896%2015.5155C106.236%2015.7654%20107.338%2016.4354%20108.201%2017.5257C109.064%2018.6161%20109.496%2019.8654%20109.496%2021.2737C109.496%2022.5457%20109.178%2023.6701%20108.542%2024.6468C107.928%2025.6008%20107.031%2026.3504%20105.85%2026.8956C104.669%2027.4407%20103.272%2027.7133%20101.659%2027.7133H91.4034V3.93097H101.216C102.829%203.93097%20104.215%204.19219%20105.373%204.71463C106.554%205.23707%20107.44%205.96394%20108.031%206.89524C108.644%207.82655%20108.951%208.88278%20108.951%2010.064C108.951%2011.4496%20108.576%2012.608%20107.826%2013.5393C107.099%2014.4706%20106.123%2015.1293%20104.896%2015.5155ZM96.1735%2013.7437H100.535C101.67%2013.7437%20102.545%2013.4939%20103.158%2012.9942C103.772%2012.4717%20104.078%2011.7335%20104.078%2010.7795C104.078%209.82545%20103.772%209.08722%20103.158%208.56478C102.545%208.04234%20101.67%207.78112%20100.535%207.78112H96.1735V13.7437ZM100.978%2023.8291C102.136%2023.8291%20103.033%2023.5565%20103.669%2023.0114C104.328%2022.4662%20104.657%2021.6939%20104.657%2020.6945C104.657%2019.6723%20104.317%2018.8773%20103.635%2018.3094C102.954%2017.7188%20102.034%2017.4235%20100.875%2017.4235H96.1735V23.8291H100.978Z'%20fill='%234A3830'/%3e%3cpath%20d='M128.562%2023.1817H119.09L117.522%2027.7133H112.514L121.066%203.89689H126.62L135.172%2027.7133H130.129L128.562%2023.1817ZM127.267%2019.3656L123.826%209.41658L120.384%2019.3656H127.267Z'%20fill='%234A3830'/%3e%3cpath%20d='M153.633%2023.1817H144.161L142.593%2027.7133H137.585L146.137%203.89689H151.691L160.243%2027.7133H155.2L153.633%2023.1817ZM152.338%2019.3656L148.897%209.41658L145.455%2019.3656H152.338Z'%20fill='%234A3830'/%3e%3cpath%20d='M178.664%204.77727L173.878%2020.5323L169.994%2019.4917L173.694%203.44567L178.664%204.77727ZM169.971%2027.7396C169.137%2027.5162%20168.514%2027.0787%20168.1%2026.4271C167.715%2025.7594%20167.625%2025.0416%20167.831%2024.2737C168.037%2023.5058%20168.47%2022.94%20169.132%2022.5765C169.822%2022.1969%20170.584%2022.1188%20171.417%2022.3422C172.229%2022.5597%20172.828%2023.0023%20173.213%2023.67C173.605%2024.3157%20173.697%2025.0226%20173.492%2025.7905C173.286%2026.5584%20172.849%2027.1351%20172.181%2027.5206C171.52%2027.8841%20170.783%2027.9572%20169.971%2027.7396Z'%20fill='%234A3830'/%3e%3c/svg%3e" alt="#ZOBAA!" />
+      </a>
+      <!-- pc -->
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary-60"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control py-2 rounded-1 ps-7 search-lg"
+          id="search-lg"
+          placeholder="搜尋景點、地點或城市"
+        />
+      </form>
+    </div>
+    <!-- PHONE -->
+    <div class="position-absolute start-0 end-0 px-4 z-1 bg-white">
+      <div class="collapse" id="collapseExample">
+        <div class="d-flex align-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control py-2 rounded-1 ps-7"
+              id="search-lg"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn border-0 p-2"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+          >
+            <span class="material-icons-outlined align-bottom"> close </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- pnone end -->
+
+    <button
+      type="button"
+      class="btn p-2 border-0 d-lg-none"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+    >
+      <span class="material-icons-outlined align-bottom"> search </span>
+    </button>
+    <button type="button" class="btn py-2 border-0">
+      <span class="position-relative">
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning cart-tag p-0"
+        >
+          2
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </span>
+      <span class="material-icons-outlined align-bottom"> shopping_cart </span>
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary-100 d-none d-lg-block fs-8 fw-bold py-4 px-6 border-0"
+    >
+      登入 / 註冊
+    </button>
+    <button
+      class="btn border-0 p-2 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+    >
+      <span class="material-icons-outlined"> menu </span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end px-6"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close pt-6"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column justify-content-between h-100">
+          <div>
+            <div
+              class="d-flex d-inline-block align-items-center border-bottom pb-4 mb-4"
+            >
+              <span
+                class="material-icons-outlined fs-4 p-1 text-primary-10 rounded-circle bg-primary-40 align-items-center me-1"
+              >
+                account_circle
+              </span>
+              <p>
+                <span class="fs-8 fw-bold text-primary-100 d-block">訪客</span
+                ><span>未登入</span>
+              </p>
+            </div>
+            <div>
+              <h4 class="fs-7 fw-bold text-primary-100">歡迎來到 ZOBAA</h4>
+              <p class="fs-8 text-secondary-80">
+                加入會員即可立即訂購、收藏行程，並享相關優惠好禮。
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary-100 w-100 fs-8 fw-bold py-4 rounded-4 mb-6"
+          >
+            登入 / 註冊
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("mainNav");
+    if (window.scrollY > 50) {
+      // 捲動超過 50px 才變色
+      navbar.classList.add("bg-white", "shadow-sm");
+      navbar.classList.remove("bg-transparent");
+    } else {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("bg-white", "shadow-sm");
+    }
+  });
+</script>
+    <main>
+      <section class="index-banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h2
+                class="fs-8 fs-lg-7 fw-bold text-primary-100 bg-primary-10 rounded-1 p-2 d-inline-block mb-3"
+              >
+                ZOBAA 旅行推薦平台
+              </h2>
+              <h1 class="fs-4 fs-lg-1 fw-bold text-primary-100 mb-2">
+                <span class="d-block d-lg-inline"> 用旅行，</span
+                ><span> 收藏世界的樣子</span>
+              </h1>
+              <p class="fs-9 fs-lg-7 text-primary-80 fw-bold mb-6">
+                <span class="d-block d-lg-inline"
+                  >ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比</span
+                ><span>價到訂購，一次完成你的完美出遊計畫。</span>
+              </p>
+              <form class="position-relative w-100">
+                <span
+                  class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary-60"
+                >
+                  search
+                </span>
+                <input
+                  type="search"
+                  class="form-control py-5 rounded-1 ps-7"
+                  id="search-lg"
+                  placeholder="搜尋景點、地點或城市"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary-100 position-absolute top-0 end-0 m-2 fs-8 fw-bold py-3 px-4"
+                >
+                  開始探索旅程
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommend py-7">
+        <div
+          class="container text-white d-lg-flex justify-content-between align-items-center"
+        >
+          <h3 class="fs-4 fs-lg-1 fw-bold mb-6">你的<br />專屬推薦</h3>
+          <div class="fs-7 fw-bold">
+            <p class="mb-lg-6 mb-3">
+              來看我們的精選推薦行程，滿意度高達 99.2%<br />
+              給自己一個難忘的旅遊行程吧！
+            </p>
+            <a href="" class="text-white">
+              查看全部行程<span
+                class="material-icons-outlined align-bottom ms-2"
+              >
+                arrow_forward
+              </span></a
+            >
+          </div>
+        </div>
+        <div class="container d-flex gap-4 overflow-x-auto">
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              alt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">峇里島渡假漫遊</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend-1.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              object-fit-coverlt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">日本深度賞櫻計畫</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5 w-100 hover-show d-lg-none"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend-2.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              object-fit-coverlt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">紐西蘭雪山探險</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5 w-100 hover-show d-lg-none"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1 hover-show-container position-relative"
+          >
+            <div class="img-mask"></div>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/recommend-3.png?raw=true"
+              class="card-img h-100 object-fit-cover"
+              object-fit-coverlt="..."
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h4 class="fs-5 fs-lg-3 fw-bold mb-2">摩洛哥迷幻之旅</h4>
+              <p class="fs-9 fs-lg-8 mb-6">
+                漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。
+              </p>
+              <button
+                type="button"
+                class="fs-8 fw-bold btn btn-light rounded-pill d-flex justify-content-between p-5 w-100 hover-show d-lg-none"
+              >
+                訂購行程<span class="material-icons-outlined">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-lg-11 py-7 deco position-relative">
+        <div class="position-absolute start-0 top-50 d-none d-lg-block">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/deco-text.svg"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div
+            class="row flex-lg-row-reverse justify-content-between align-items-lg-center"
+          >
+            <div class="col-lg-4 mb-7 d-lflex justify-content-lg-end">
+              <div>
+                <h3 class="fs-4 fs-lg-1 fw-bold text-primary-100">
+                  ZOBAA!<br /><span class="text-nowrap">踏上旅程的</span
+                  ><br />第一站
+                </h3>
+                <p class="fs-9 fs-lg-8 fw-bold text-primary-60">
+                  探索最熱門的旅遊主題，<br />
+                  從旅人必備攻略到獨家優惠，<br />
+                  全都為你精挑細選。
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-1.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-2.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row offset-row">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-3.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/intro-4.png?raw=true"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4>ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-10 bg-shape mb-">
+        <div class="container">
+          <div>
+            <div class="position-relative">
+              <div class="position-absolute map-years">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/deco-text-1.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h3 class="fs-4 fs-lg-1 fw-bold text-primary-100">
+              今年旅行的<br />靈感地圖
+            </h3>
+          </div>
+          <div>
+            <ul
+              class="nav nav-pills mb-3 map-btn-bg gap-2 fs-8 fw-bold"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link btn-white active"
+                  id="pills-all-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-all"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-all"
+                  aria-selected="true"
+                >
+                  全部
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-asia-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-asia"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-asia"
+                  aria-selected="false"
+                >
+                  亞洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-europe-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-europe"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-europe"
+                  aria-selected="false"
+                >
+                  歐洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-america-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-america"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-america"
+                  aria-selected="false"
+                >
+                  美洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-oceania-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-oceania"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-oceania"
+                  aria-selected="false"
+                >
+                  大洋洲
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-africa-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-africa"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-africa"
+                  aria-selected="false"
+                >
+                  非洲
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-all"
+                role="tabpanel"
+                aria-labelledby="pills-all-tab"
+                tabindex="0"
+              >
+                <div
+                  class="row flex-nowrap overflow-x-auto pt-10 over-width align-items-stretch"
+                >
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >1
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-1.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              日本京都
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            走進四季交織的文化時光
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >2
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-2.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              南韓首爾
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            從街邊美食到韓劇場景
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >3
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-3.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              歐洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              法國巴黎
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            在藝術與咖啡香中迷路
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            走進瑪黑區，最容易與巴黎風格不期而遇 ☕️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >4
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-4.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              大洋洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              澳洲雪梨
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            城市與大自然的交會
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >5
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4 h-100"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-5.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              非洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              埃及開羅
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            穿越千年時光的沙漠冒險
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-asia"
+                role="tabpanel"
+                aria-labelledby="pills-asia-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >1
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-1.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              日本京都
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            走進四季交織的文化時光
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >2
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-2.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              亞洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              南韓首爾
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            從街邊美食到韓劇場景
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-europe"
+                role="tabpanel"
+                aria-labelledby="pills-europe-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >3
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-3.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              歐洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              法國巴黎
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            在藝術與咖啡香中迷路
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            走進瑪黑區，最容易與巴黎風格不期而遇 ☕️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-oceania"
+                role="tabpanel"
+                aria-labelledby="pills-oceania-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >4
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-4.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              大洋洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              澳洲雪梨
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            城市與大自然的交會
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-america"
+                role="tabpanel"
+                aria-labelledby="pills-america-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-africa"
+                role="tabpanel"
+                aria-labelledby="pills-africa-tab"
+                tabindex="0"
+              >
+                <div class="row flex-nowrap overflow-x-auto pt-10">
+                  <div class="col-lg-6 position-relative">
+                    <span class="position-absolute top-0 star-0 number z-3"
+                      >5
+                    </span>
+                    <div
+                      class="card d-flex flex-column flex-lg-row justify-content-center p-4"
+                    >
+                      <div class="row">
+                        <div class="map col-lg-5">
+                          <img
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/map-5.png?raw=true"
+                            class="card-img-top object-fit-cover rounded-1"
+                            alt="..."
+                          />
+                        </div>
+
+                        <div class="pt-2 col-lg-7">
+                          <div class="mb-2">
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              非洲
+                            </button>
+                            <button
+                              class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                              type="button"
+                            >
+                              埃及開羅
+                            </button>
+                          </div>
+                          <h4 class="fs-4 fs-lg-2 fw- mb-2">
+                            穿越千年時光的沙漠冒險
+                          </h4>
+                          <p class="fs-9 fs-lg-8 mb-6">
+                            乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。
+                          </p>
+                          <button
+                            class="btn btn-primary-10 fs-9 fw-bold text-primary-100 mb-2"
+                            type="button"
+                          >
+                            ZOBAA 建議
+                          </button>
+                          <p class="mb-6">
+                            建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5"
+                          >
+                            <span class="fs-9 fs-lg-8 fw-bold"
+                              >立即探索魅力古都</span
+                            >
+                            <span
+                              class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                            >
+                              arrow_forward
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-lg-11 py-7">
+          <div class="position-relative">
+            <h3 class="fs-4 fs-lg-1 text-primary-100 fw-bold mb-7 mb-lg-10">
+              搜尋墨爾本嗎？<br />
+              來點行程參考！
+            </h3>
+            <div class="position-absolute z-n1 hashtag top-0 star-0">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-%23.svg"
+                alt="裝飾圖案"
+              />
+            </div>
+          </div>
+          <div class="row flex-nowrap overflow-x-auto">
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-1.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-2">
+                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >即買即用</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="data:image/svg+xml,%3csvg%20width='12'%20height='13'%20viewBox='0%200%2012%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.00001%209.53617L2.73751%2011.2177C2.71281%2011.2304%202.68507%2011.236%202.65737%2011.2339C2.62967%2011.2318%202.6031%2011.222%202.58062%2011.2057C2.55815%2011.1893%202.54065%2011.1671%202.53008%2011.1414C2.51951%2011.1157%202.51628%2011.0876%202.52076%2011.0602L3.11326%207.43767L0.504757%204.85617C0.484628%204.83686%200.470348%204.81226%200.463551%204.78521C0.456754%204.75815%200.457716%204.72973%200.466326%204.70319C0.474936%204.67666%200.490846%204.65308%200.512234%204.63517C0.533622%204.61726%200.559622%204.60574%200.587257%204.60192L4.21501%204.04467L5.86501%200.767172C5.87745%200.742211%205.8966%200.721213%205.92031%200.706535C5.94403%200.691857%205.97137%200.684082%205.99926%200.684082C6.02715%200.684082%206.05448%200.691857%206.0782%200.706535C6.10191%200.721213%206.12107%200.742211%206.13351%200.767172L7.78351%204.04467L11.4113%204.60192C11.4387%204.60601%2011.4645%204.61767%2011.4857%204.63562C11.5069%204.65356%2011.5227%204.67707%2011.5313%204.70349C11.5399%204.72991%2011.5409%204.7582%2011.5343%204.78517C11.5276%204.81215%2011.5136%204.83673%2011.4938%204.85617L8.88751%207.43842L9.47851%2011.0609C9.48282%2011.0883%209.47947%2011.1163%209.46883%2011.1419C9.45819%2011.1675%209.44068%2011.1896%209.41823%2011.2058C9.39579%2011.222%209.36929%2011.2317%209.34167%2011.2338C9.31405%2011.2359%209.28639%2011.2303%209.26176%2011.2177L6.00001%209.53617Z'%20fill='%23F6BD2B'/%3e%3c/svg%3e" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT$ 4,220</span
+                    >
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 5,220</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-2.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-6">
+                    無尾熊動物園＋企鵝歸巢雙享之旅
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >即買即用</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >7 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="data:image/svg+xml,%3csvg%20width='12'%20height='13'%20viewBox='0%200%2012%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.00001%209.53617L2.73751%2011.2177C2.71281%2011.2304%202.68507%2011.236%202.65737%2011.2339C2.62967%2011.2318%202.6031%2011.222%202.58062%2011.2057C2.55815%2011.1893%202.54065%2011.1671%202.53008%2011.1414C2.51951%2011.1157%202.51628%2011.0876%202.52076%2011.0602L3.11326%207.43767L0.504757%204.85617C0.484628%204.83686%200.470348%204.81226%200.463551%204.78521C0.456754%204.75815%200.457716%204.72973%200.466326%204.70319C0.474936%204.67666%200.490846%204.65308%200.512234%204.63517C0.533622%204.61726%200.559622%204.60574%200.587257%204.60192L4.21501%204.04467L5.86501%200.767172C5.87745%200.742211%205.8966%200.721213%205.92031%200.706535C5.94403%200.691857%205.97137%200.684082%205.99926%200.684082C6.02715%200.684082%206.05448%200.691857%206.0782%200.706535C6.10191%200.721213%206.12107%200.742211%206.13351%200.767172L7.78351%204.04467L11.4113%204.60192C11.4387%204.60601%2011.4645%204.61767%2011.4857%204.63562C11.5069%204.65356%2011.5227%204.67707%2011.5313%204.70349C11.5399%204.72991%2011.5409%204.7582%2011.5343%204.78517C11.5276%204.81215%2011.5136%204.83673%2011.4938%204.85617L8.88751%207.43842L9.47851%2011.0609C9.48282%2011.0883%209.47947%2011.1163%209.46883%2011.1419C9.45819%2011.1675%209.44068%2011.1896%209.41823%2011.2058C9.39579%2011.222%209.36929%2011.2317%209.34167%2011.2338C9.31405%2011.2359%209.28639%2011.2303%209.26176%2011.2177L6.00001%209.53617Z'%20fill='%23F6BD2B'/%3e%3c/svg%3e" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT$ 3,890
+                    </span>
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 4,920</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-3.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-2">
+                    大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >中文導覽</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="data:image/svg+xml,%3csvg%20width='12'%20height='13'%20viewBox='0%200%2012%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.00001%209.53617L2.73751%2011.2177C2.71281%2011.2304%202.68507%2011.236%202.65737%2011.2339C2.62967%2011.2318%202.6031%2011.222%202.58062%2011.2057C2.55815%2011.1893%202.54065%2011.1671%202.53008%2011.1414C2.51951%2011.1157%202.51628%2011.0876%202.52076%2011.0602L3.11326%207.43767L0.504757%204.85617C0.484628%204.83686%200.470348%204.81226%200.463551%204.78521C0.456754%204.75815%200.457716%204.72973%200.466326%204.70319C0.474936%204.67666%200.490846%204.65308%200.512234%204.63517C0.533622%204.61726%200.559622%204.60574%200.587257%204.60192L4.21501%204.04467L5.86501%200.767172C5.87745%200.742211%205.8966%200.721213%205.92031%200.706535C5.94403%200.691857%205.97137%200.684082%205.99926%200.684082C6.02715%200.684082%206.05448%200.691857%206.0782%200.706535C6.10191%200.721213%206.12107%200.742211%206.13351%200.767172L7.78351%204.04467L11.4113%204.60192C11.4387%204.60601%2011.4645%204.61767%2011.4857%204.63562C11.5069%204.65356%2011.5227%204.67707%2011.5313%204.70349C11.5399%204.72991%2011.5409%204.7582%2011.5343%204.78517C11.5276%204.81215%2011.5136%204.83673%2011.4938%204.85617L8.88751%207.43842L9.47851%2011.0609C9.48282%2011.0883%209.47947%2011.1163%209.46883%2011.1419C9.45819%2011.1675%209.44068%2011.1896%209.41823%2011.2058C9.39579%2011.222%209.36929%2011.2317%209.34167%2011.2338C9.31405%2011.2359%209.28639%2011.2303%209.26176%2011.2177L6.00001%209.53617Z'%20fill='%23F6BD2B'/%3e%3c/svg%3e" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT$ 3,690
+                    </span>
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 4,500</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 position-relative">
+                <button
+                  type="button"
+                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
+                >
+                  <span class="material-icons-outlined"> favorite_border </span>
+                </button>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/journey-4.png?raw=true"
+                  class="card-img-top rounded-4 mb-4"
+                  alt="..."
+                />
+                <div>
+                  <h4 class="fs-8 fw-bold mb-2">
+                    墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照
+                  </h4>
+                  <div class="d-flex mb-2">
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >專業導覽</span
+                    >
+                    <span
+                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                      >3 天前可免費取消</span
+                    >
+                  </div>
+                  <p class="fs-9 pb-4 mb-4 border-bottom">
+                    <span
+                      ><img src="data:image/svg+xml,%3csvg%20width='12'%20height='13'%20viewBox='0%200%2012%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.00001%209.53617L2.73751%2011.2177C2.71281%2011.2304%202.68507%2011.236%202.65737%2011.2339C2.62967%2011.2318%202.6031%2011.222%202.58062%2011.2057C2.55815%2011.1893%202.54065%2011.1671%202.53008%2011.1414C2.51951%2011.1157%202.51628%2011.0876%202.52076%2011.0602L3.11326%207.43767L0.504757%204.85617C0.484628%204.83686%200.470348%204.81226%200.463551%204.78521C0.456754%204.75815%200.457716%204.72973%200.466326%204.70319C0.474936%204.67666%200.490846%204.65308%200.512234%204.63517C0.533622%204.61726%200.559622%204.60574%200.587257%204.60192L4.21501%204.04467L5.86501%200.767172C5.87745%200.742211%205.8966%200.721213%205.92031%200.706535C5.94403%200.691857%205.97137%200.684082%205.99926%200.684082C6.02715%200.684082%206.05448%200.691857%206.0782%200.706535C6.10191%200.721213%206.12107%200.742211%206.13351%200.767172L7.78351%204.04467L11.4113%204.60192C11.4387%204.60601%2011.4645%204.61767%2011.4857%204.63562C11.5069%204.65356%2011.5227%204.67707%2011.5313%204.70349C11.5399%204.72991%2011.5409%204.7582%2011.5343%204.78517C11.5276%204.81215%2011.5136%204.83673%2011.4938%204.85617L8.88751%207.43842L9.47851%2011.0609C9.48282%2011.0883%209.47947%2011.1163%209.46883%2011.1419C9.45819%2011.1675%209.44068%2011.1896%209.41823%2011.2058C9.39579%2011.222%209.36929%2011.2317%209.34167%2011.2338C9.31405%2011.2359%209.28639%2011.2303%209.26176%2011.2177L6.00001%209.53617Z'%20fill='%23F6BD2B'/%3e%3c/svg%3e" alt="" />4.2</span
+                    >
+                    <span class="text-secondary-60">(333)</span
+                    ><sapn class="border-start ps-3 ms-3"> 500+ 個已訂購</sapn>
+                  </p>
+                  <p>
+                    <span class="fs-7 fw-bold text-primary-100 d-block">
+                      NT6$ 1,280
+                    </span>
+                    <span class="fs-9 text-secondary-60"
+                      ><del>NT$ 2,480</del></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-bottom overflow-hidden">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-title-1.svg"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-title-2.svg"
+            alt=""
+          />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-title-3.svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="bg-primary-40 position-relative overflow-hidden">
+        <div class="select-img d-none d-lg-block">
+          <div class="position-absolute star-0 top-0 top z-3">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-up.svg"
+              alt="裝飾圖片"
+            />
+          </div>
+          <div class="position-absolute top-50 middle z-1">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-line.svg"
+              alt="裝飾圖片"
+            />
+          </div>
+          <div class="position-absolute end-0 bottom-0 bottom z-1">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/index/bg-down.svg"
+              alt="裝飾圖片"
+            />
+          </div>
+        </div>
+        <div class="container py-7 py-lg-11">
+          <div class="row px-3">
+            <div class="col-12 position-relative z-2">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/card.png?raw=true"
+                alt=""
+                class="w-100 mb-2 mb-lg-6"
+              />
+            </div>
+            <div class="rounded-4 select-bg p-6 position-relative z-2">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h4
+                    class="fs-6 fs-lg-2 fw-bold text-primary-100 mb-4 mb-lg-6"
+                  >
+                    為什麼選擇 ZOBAA ?
+                  </h4>
+                  <p class="fs-9 fs-lg-8 mb-6 mb-lg-6">
+                    不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br />
+                    ZOBΛA 希望你能放心探索世界，把記憶留給旅程本身。
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary-120 d-flex justify-content-between rounded-pill py-4 px-5 d-none d-lg-block"
+                  >
+                    <span class="fs-9 fs-lg-8 fw-bold"
+                      >立即探索我們的精心旅程</span
+                    >
+                    <span
+                      class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                    >
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-lg-flex">
+                    <div class="rounded-4 bg-white p-6 mb-4 me-4 w-100 py-lg-9">
+                      <span class="d-block fs-4 fw-bold text-primary-100"
+                        >8 年
+                        <img
+                          src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16%209.91372H10.0706V16H5.92941V9.91372H0V6.08627H5.92941V0H10.0706V6.08627H16V9.91372Z'%20fill='%234A3830'/%3e%3c/svg%3e"
+                          alt="+"
+                          class="align-top"
+                      /></span>
+                      <span class="fs-9 text-primary-80 fw-bold"
+                        >旅遊企劃經驗</span
+                      >
+                    </div>
+                    <div class="rounded-4 bg-white p-6 mb-4 w-100 py-lg-9">
+                      <span class="d-block fs-4 fw-bold text-primary-100"
+                        >30,000
+                        <img
+                          src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16%209.91372H10.0706V16H5.92941V9.91372H0V6.08627H5.92941V0H10.0706V6.08627H16V9.91372Z'%20fill='%234A3830'/%3e%3c/svg%3e"
+                          alt="+"
+                          class="align-top"
+                      /></span>
+                      <span class="fs-9 text-primary-80 fw-bold"
+                        >旅人五星好評</span
+                      >
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-primary-120 d-flex justify-content-between w-100 rounded-pill py-4 px-5 d-lg-none d-block"
+                  >
+                    <span class="fs-9 fs-lg-8 fw-bold"
+                      >立即探索我們的精心旅程</span
+                    >
+                    <span
+                      class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                    >
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-secondary-100 footer">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-6 mb-7">
+        <div class="mb-7">
+          <img src="data:image/svg+xml,%3csvg%20width='180'%20height='30'%20viewBox='0%200%20180%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.9175%2012.4149L23.7931%2017.662H28.1203V21.9211H22.8732L21.6466%2027.7133H17.115L18.3416%2021.9211H12.1405L10.9139%2027.7133H6.41634L7.64294%2021.9211H2.49805V17.662H8.56289L9.68727%2012.4149H4.57645V8.15591H10.6072L11.7997%202.49994H16.2973L15.1047%208.15591H21.3059L22.4984%202.49994H27.03L25.8375%208.15591H30.1987V12.4149H24.9175ZM20.3859%2012.4149H14.1848L13.0604%2017.662H19.2615L20.3859%2012.4149Z'%20fill='%234A3830'/%3e%3cpath%20d='M48.5295%2023.6928H59.2282V27.7133H43.0098V24.0335L53.6403%207.95148H43.0098V3.93097H59.2282V7.61076L48.5295%2023.6928Z'%20fill='%234A3830'/%3e%3cpath%20d='M75.0094%2027.9518C72.7834%2027.9518%2070.739%2027.4294%2068.8764%2026.3845C67.0138%2025.3396%2065.5374%2023.8972%2064.447%2022.0573C63.3567%2020.1947%2062.8116%2018.0936%2062.8116%2015.754C62.8116%2013.4371%2063.3567%2011.3587%2064.447%209.5188C65.5374%207.65619%2067.0138%206.20244%2068.8764%205.15756C70.739%204.11269%2072.7834%203.59025%2075.0094%203.59025C77.2582%203.59025%2079.3025%204.11269%2081.1424%205.15756C83.005%206.20244%2084.4701%207.65619%2085.5377%209.5188C86.628%2011.3587%2087.1732%2013.4371%2087.1732%2015.754C87.1732%2018.0936%2086.628%2020.1947%2085.5377%2022.0573C84.4701%2023.8972%2083.005%2025.3396%2081.1424%2026.3845C79.2798%2027.4294%2077.2355%2027.9518%2075.0094%2027.9518ZM75.0094%2023.6928C76.4404%2023.6928%2077.7011%2023.3748%2078.7914%2022.7388C79.8817%2022.0801%2080.7335%2021.1488%2081.3468%2019.9449C81.9601%2018.741%2082.2668%2017.344%2082.2668%2015.754C82.2668%2014.164%2081.9601%2012.7784%2081.3468%2011.5972C80.7335%2010.3933%2079.8817%209.47337%2078.7914%208.83736C77.7011%208.20134%2076.4404%207.88334%2075.0094%207.88334C73.5784%207.88334%2072.3063%208.20134%2071.1933%208.83736C70.103%209.47337%2069.2512%2010.3933%2068.6379%2011.5972C68.0246%2012.7784%2067.718%2014.164%2067.718%2015.754C67.718%2017.344%2068.0246%2018.741%2068.6379%2019.9449C69.2512%2021.1488%2070.103%2022.0801%2071.1933%2022.7388C72.3063%2023.3748%2073.5784%2023.6928%2075.0094%2023.6928Z'%20fill='%234A3830'/%3e%3cpath%20d='M104.896%2015.5155C106.236%2015.7654%20107.338%2016.4354%20108.201%2017.5257C109.064%2018.6161%20109.496%2019.8654%20109.496%2021.2737C109.496%2022.5457%20109.178%2023.6701%20108.542%2024.6468C107.928%2025.6008%20107.031%2026.3504%20105.85%2026.8956C104.669%2027.4407%20103.272%2027.7133%20101.659%2027.7133H91.4034V3.93097H101.216C102.829%203.93097%20104.215%204.19219%20105.373%204.71463C106.554%205.23707%20107.44%205.96394%20108.031%206.89524C108.644%207.82655%20108.951%208.88278%20108.951%2010.064C108.951%2011.4496%20108.576%2012.608%20107.826%2013.5393C107.099%2014.4706%20106.123%2015.1293%20104.896%2015.5155ZM96.1735%2013.7437H100.535C101.67%2013.7437%20102.545%2013.4939%20103.158%2012.9942C103.772%2012.4717%20104.078%2011.7335%20104.078%2010.7795C104.078%209.82545%20103.772%209.08722%20103.158%208.56478C102.545%208.04234%20101.67%207.78112%20100.535%207.78112H96.1735V13.7437ZM100.978%2023.8291C102.136%2023.8291%20103.033%2023.5565%20103.669%2023.0114C104.328%2022.4662%20104.657%2021.6939%20104.657%2020.6945C104.657%2019.6723%20104.317%2018.8773%20103.635%2018.3094C102.954%2017.7188%20102.034%2017.4235%20100.875%2017.4235H96.1735V23.8291H100.978Z'%20fill='%234A3830'/%3e%3cpath%20d='M128.562%2023.1817H119.09L117.522%2027.7133H112.514L121.066%203.89689H126.62L135.172%2027.7133H130.129L128.562%2023.1817ZM127.267%2019.3656L123.826%209.41658L120.384%2019.3656H127.267Z'%20fill='%234A3830'/%3e%3cpath%20d='M153.633%2023.1817H144.161L142.593%2027.7133H137.585L146.137%203.89689H151.691L160.243%2027.7133H155.2L153.633%2023.1817ZM152.338%2019.3656L148.897%209.41658L145.455%2019.3656H152.338Z'%20fill='%234A3830'/%3e%3cpath%20d='M178.664%204.77727L173.878%2020.5323L169.994%2019.4917L173.694%203.44567L178.664%204.77727ZM169.971%2027.7396C169.137%2027.5162%20168.514%2027.0787%20168.1%2026.4271C167.715%2025.7594%20167.625%2025.0416%20167.831%2024.2737C168.037%2023.5058%20168.47%2022.94%20169.132%2022.5765C169.822%2022.1969%20170.584%2022.1188%20171.417%2022.3422C172.229%2022.5597%20172.828%2023.0023%20173.213%2023.67C173.605%2024.3157%20173.697%2025.0226%20173.492%2025.7905C173.286%2026.5584%20172.849%2027.1351%20172.181%2027.5206C171.52%2027.8841%20170.783%2027.9572%20169.971%2027.7396Z'%20fill='%234A3830'/%3e%3c/svg%3e" alt="logo" class="logo" />
+        </div>
+        <ul class="d-flex flex-lg-row flex-column gap-6">
+          <li><a href="#" class="text-white">常見問題</a></li>
+          <li><a href="#" class="text-white">關於我們</a></li>
+          <li><a href="#" class="text-white">隱私權政策</a></li>
+          <li><a href="#" class="text-white">使用者條款</a></li>
+        </ul>
+      </div>
+      <div
+        class="col-lg-6 d-flex flex-column align-items-lg-end align-items-start"
+      >
+        <ul class="d-flex gap-4 mb-4">
+          <li>
+            <a href="#"><img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20%3e%3cg%20clip-path='url(%23clip0_187_42659)'%3e%3cpath%20opacity='0.7'%20d='M20%200.5C30.7696%200.5%2039.5%209.23045%2039.5%2020C39.5%2030.7696%2030.7696%2039.5%2020%2039.5C9.23045%2039.5%200.5%2030.7696%200.5%2020C0.5%209.23045%209.23045%200.5%2020%200.5Z'%20stroke='white'%20/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M29%2019.0263C29%2015.152%2024.9625%2012%2020%2012C15.0377%2012%2011%2015.152%2011%2019.0263C11%2022.4994%2014.2019%2025.4086%2018.527%2025.9589C18.8199%2026.0196%2019.2188%2026.1451%2019.3198%2026.386C19.4106%2026.6047%2019.3793%2026.9474%2019.3488%2027.1685C19.3488%2027.1685%2019.2436%2027.7796%2019.2204%2027.91C19.1814%2028.1288%2019.0395%2028.7659%2020%2028.3767C20.9608%2027.9874%2025.1828%2025.4404%2027.071%2023.3494C28.3754%2021.9736%2029%2020.577%2029%2019.0263ZM14.4146%2021.1339C14.1861%2021.1339%2014%2020.9408%2014%2020.703V17.4397C14%2017.2022%2014.2116%2017.0089%2014.48%2017.0089C14.7484%2017.0089%2014.9%2017.2006%2014.9%2017.4397V20.2724H15.9854C16.2143%2020.2724%2016.4%2020.4657%2016.4%2020.703C16.4%2020.9408%2016.2143%2021.1339%2015.9854%2021.1339H14.4146ZM18.2%2020.703C18.2%2020.9408%2017.9981%2021.1339%2017.7501%2021.1339C17.5019%2021.1339%2017.3%2020.9408%2017.3%2020.703V17.4397C17.3%2017.2022%2017.5019%2017.0089%2017.7501%2017.0089C17.9981%2017.0089%2018.2%2017.2022%2018.2%2017.4397V20.703ZM22.7%2020.703C22.7%2020.889%2022.5717%2021.0532%2022.3797%2021.1116C22.3316%2021.1265%2022.2813%2021.1339%2022.2309%2021.1339C22.0849%2021.1339%2021.9449%2021.0696%2021.8566%2020.9616L20.0372%2018.6842V20.703C20.0372%2020.9408%2019.8272%2021.1339%2019.5687%2021.1339C19.3103%2021.1339%2019.1%2020.9408%2019.1%2020.703V17.4397C19.1%2017.2541%2019.2288%2017.0899%2019.4203%2017.0312C19.4686%2017.0162%2019.5187%2017.0089%2019.5691%2017.0089C19.7153%2017.0089%2019.8554%2017.0731%2019.9431%2017.1812L21.7631%2019.4587V17.4397C21.7631%2017.2022%2021.9735%2017.0089%2022.2316%2017.0089C22.4902%2017.0089%2022.7%2017.2022%2022.7%2017.4397V20.703ZM25.5853%2018.6407C25.8142%2018.6407%2026%2018.8339%2026%2019.0715C26%2019.3088%2025.8142%2019.502%2025.5853%2019.502H24.4294V20.2724H25.5853C25.8138%2020.2724%2026%2020.4657%2026%2020.703C26%2020.9408%2025.8138%2021.1339%2025.5853%2021.1339H24.0145C23.7863%2021.1339%2023.6%2020.9408%2023.6%2020.703V19.0726V19.0715V17.4397C23.6%2017.2022%2023.7859%2017.0089%2024.0145%2017.0089H25.5853C25.8142%2017.0089%2026%2017.2022%2026%2017.4397C26%2017.6772%2025.8142%2017.8702%2025.5853%2017.8702H24.4294V18.6407H25.5853Z'%20fill='white'%20/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_42659'%3e%3crect%20width='40'%20height='40'%20fill='white'%20/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="line" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_42662)'%3e%3cpath%20opacity='0.7'%20d='M20%200.5C30.7696%200.5%2039.5%209.23045%2039.5%2020C39.5%2030.7696%2030.7696%2039.5%2020%2039.5C9.23045%2039.5%200.5%2030.7696%200.5%2020C0.5%209.23045%209.23045%200.5%2020%200.5Z'%20stroke='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M20%2011.9946C20.855%2011.9946%2021.732%2012.0166%2022.582%2012.0526L23.586%2012.1006L24.547%2012.1576L25.447%2012.2186L26.269%2012.2826C27.161%2012.3509%2028.0004%2012.7316%2028.6395%2013.3577C29.2786%2013.9838%2029.6764%2014.8152%2029.763%2015.7056L29.803%2016.1306L29.878%2017.0406C29.948%2017.9836%2030%2019.0116%2030%2019.9946C30%2020.9776%2029.948%2022.0056%2029.878%2022.9486L29.803%2023.8586C29.79%2024.0046%2029.777%2024.1456%2029.763%2024.2836C29.6764%2025.1742%2029.2784%2026.0058%2028.6391%2026.6319C27.9999%2027.258%2027.1602%2027.6386%2026.268%2027.7066L25.448%2027.7696L24.548%2027.8316L23.586%2027.8886L22.582%2027.9366C21.732%2027.9726%2020.855%2027.9946%2020%2027.9946C19.145%2027.9946%2018.268%2027.9726%2017.418%2027.9366L16.414%2027.8886L15.453%2027.8316L14.553%2027.7696L13.731%2027.7066C12.839%2027.6384%2011.9996%2027.2577%2011.3605%2026.6316C10.7214%2026.0055%2010.3236%2025.1741%2010.237%2024.2836L10.197%2023.8586L10.122%2022.9486C10.0455%2021.9658%2010.0048%2020.9804%2010%2019.9946C10%2019.0116%2010.052%2017.9836%2010.122%2017.0406L10.197%2016.1306C10.21%2015.9846%2010.223%2015.8436%2010.237%2015.7056C10.3235%2014.8153%2010.7212%2013.984%2011.3601%2013.358C11.999%2012.7319%2012.8381%2012.3511%2013.73%2012.2826L14.551%2012.2186L15.451%2012.1576L16.413%2012.1006L17.417%2012.0526C18.268%2012.0166%2019.145%2011.9946%2020%2011.9946ZM18%2017.5696V22.4196C18%2022.8816%2018.5%2023.1696%2018.9%2022.9396L23.1%2020.5146C23.1914%2020.462%2023.2673%2020.3863%2023.3201%2020.295C23.3729%2020.2037%2023.4007%2020.1001%2023.4007%2019.9946C23.4007%2019.8892%2023.3729%2019.7856%2023.3201%2019.6943C23.2673%2019.603%2023.1914%2019.5272%2023.1%2019.4746L18.9%2017.0506C18.8088%2016.998%2018.7053%2016.9702%2018.5999%2016.9702C18.4945%2016.9703%2018.3911%2016.998%2018.2998%2017.0507C18.2086%2017.1034%2018.1329%2017.1792%2018.0802%2017.2705C18.0276%2017.3618%2017.9999%2017.4653%2018%2017.5706V17.5696Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_42662'%3e%3crect%20width='40'%20height='40'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="youtube" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_42665)'%3e%3cpath%20opacity='0.7'%20d='M20%200.5C30.7696%200.5%2039.5%209.23045%2039.5%2020C39.5%2030.7696%2030.7696%2039.5%2020%2039.5C9.23045%2039.5%200.5%2030.7696%200.5%2020C0.5%209.23045%209.23045%200.5%2020%200.5Z'%20stroke='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.5983%2020.9736H24.1413L24.5219%2018.0404H21.5983V16.1677C21.5983%2015.3184%2021.8357%2014.7397%2023.0615%2014.7397L24.625%2014.739V12.1156C24.3545%2012.0799%2023.4265%2012%2022.3467%2012C20.0926%2012%2018.5494%2013.3669%2018.5494%2015.8773V18.0404H16V20.9736H18.5494V28.5H21.5983V20.9736Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_42665'%3e%3crect%20width='40'%20height='40'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="facebook" /></a>
+          </li>
+        </ul>
+
+        <p class="fs-9 text-white">
+          copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
