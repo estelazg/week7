@@ -1,0 +1,65 @@
+.breadcrumb {
+  a {
+    color: $primary-100;
+  }
+}
+
+.place {
+  padding-top: 156px;
+}
+
+.osaka {
+  height: 100%;
+  img {
+    width: 100%;
+  }
+}
+.category {
+  text-align: center;
+  img {
+    width: 64px;
+    height: auto;
+  }
+}
+.button-prev,
+.button-next {
+  color: $primary-100;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.tourism {
+  a.active {
+    font-weight: 600;
+    color: $primary-100;
+    padding-bottom: 16px;
+    border-bottom: 4px solid $primary-100;
+  }
+}
+
+.mySwiper {
+  --swiper-slides-per-view: 4;
+  --swiper-space-between: 24px;
+  --swiper-initial-slide: 0;
+  --swiper-autoplay-delay: 2500ms;
+}
+
+/* 在手機上改為單張顯示 */
+@media (max-width: 768px) {
+  .mySwiper {
+    --swiper-slides-per-view: 1;
+    --swiper-space-between: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .osaka {
+    height: 417px;
+  }
+  .category {
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+}
