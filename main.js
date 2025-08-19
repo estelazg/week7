@@ -3,61 +3,42 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 console.log("Hello world");
 
-// 語系資料
-const zh = {
-  days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
-  daysShort: ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
-  daysMin: ["日", "一", "二", "三", "四", "五", "六"],
-  months: [
-    "一月",
-    "二月",
-    "三月",
-    "四月",
-    "五月",
-    "六月",
-    "七月",
-    "八月",
-    "九月",
-    "十月",
-    "十一月",
-    "十二月",
-  ],
-  monthsShort: [
-    "1月",
-    "2月",
-    "3月",
-    "4月",
-    "5月",
-    "6月",
-    "7月",
-    "8月",
-    "9月",
-    "10月",
-    "11月",
-    "12月",
-  ],
-  today: "今天",
-  clear: "清除",
-  format: "yyyy/mm/dd",
-  timeFormat: "hh:mm aa",
-  firstDay: 0,
-};
+// 引入 Swiper core 與樣式
+import Swiper from "swiper";
+import "swiper/css";
 
-// 設定停用日期
-const disabledDate = ["2025-08-01", "2025-08-05"];
+// 如果要用 Pagination、Navigation
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-// 加入月曆
-const dp = new AirDatepicker("#airDatepicker", {
-  inline: true,
-  locale: zh,
-  navTitles: {
-    days: `
-        <div class="custom-nav-title">
-          <span class="nav-year">yyyy 年</span>
-          <span class="nav-month">M 月</span>
-        </div>
-      `,
-  },
-  showOtherMonths: false,
+// 初始化 Swiper
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".mySwiper", {
+    modules: [Pagination, Navigation, Autoplay], // 記得加上要用的功能
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
 });
-dp.disableDate(disabledDate);

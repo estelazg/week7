@@ -8,10 +8,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+
     <title>地點搜尋</title>
   </head>
   <body>
@@ -149,438 +146,233 @@
           <h2 class="fs-lg-2 fs-4 fw-bold text-primary-100 mb-7">
             大阪 TOP 10!
           </h2>
-          <button
-            type="button"
-            class="btn button-prev star-0 top-50 shadow position-absolute border-0 d-none d-lg-block"
-          >
-            <span class="material-symbols-outlined"> arrow_back </span>
-          </button>
-          <button
-            type="button"
-            class="button-next end-0 top-50 shadow position-absolute border-0 d-none d-lg-block"
-          >
-            <span class="material-symbols-outlined"> arrow_forward </span>
-          </button>
-          <swiper-container
-            class="mySwiper container position-relative z-1"
-            slides-per-view="4"
-            initial-slide="0"
-            space-between="24"
-            pagination="false"
-            pagination-type="fraction"
-            navigation="false"
-          >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-1.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold mb-2">
-                      環球影城超值一日遊｜哈利波特園區＋快速通關體驗
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >即買即用</span
-                      >
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >5 天前可免費取消</span
-                      >
-                    </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.8</span
-                      >
-                      <span class="text-secondary-60">(1029)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        1,000+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 5,480
+          <div class="swiper-container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0 position-relative">
+                    <button
+                      type="button"
+                      class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                    >
+                      <span class="material-icons-outlined">
+                        favorite_border
                       </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 6,200</del></span
-                      >
-                    </p>
+                    </button>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-1.png?raw=true"
+                      class="card-img-top rounded-4 mb-4"
+                      alt="..."
+                    />
+                    <div>
+                      <h4 class="fs-8 fw-bold mb-2">
+                        環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                      </h4>
+                      <div class="d-flex mb-2">
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >即買即用</span
+                        >
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >5 天前可免費取消</span
+                        >
+                      </div>
+                      <p class="fs-9 pb-4 mb-4 border-bottom">
+                        <span
+                          ><img
+                            src="../assets/images/star.svg"
+                            alt=""
+                          />4.8</span
+                        >
+                        <span class="text-secondary-60">(1029)</span
+                        ><sapn class="border-start ps-3 ms-3">
+                          1,000+ 個已訂購</sapn
+                        >
+                      </p>
+                      <p>
+                        <span class="fs-7 fw-bold text-primary-100 d-block">
+                          NT$ 5,480
+                        </span>
+                        <span class="fs-9 text-secondary-60"
+                          ><del>NT$ 6,200</del></span
+                        >
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-2.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold">
-                      奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >中文導覽
+                <div class="swiper-slide">
+                  <div class="card border-0 position-relative">
+                    <button
+                      type="button"
+                      class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                    >
+                      <span class="material-icons-outlined">
+                        favorite_border
                       </span>
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >5 天前可免費取消</span
-                      >
-                    </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.7</span
-                      >
+                    </button>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-2.png?raw=true"
+                      class="card-img-top rounded-4 mb-4"
+                      alt="..."
+                    />
+                    <div>
+                      <h4 class="fs-8 fw-bold">
+                        奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                      </h4>
+                      <div class="d-flex mb-2">
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >中文導覽
+                        </span>
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >5 天前可免費取消</span
+                        >
+                      </div>
+                      <p class="fs-9 pb-4 mb-4 border-bottom">
+                        <span
+                          ><img
+                            src="../assets/images/star.svg"
+                            alt=""
+                          />4.7</span
+                        >
 
-                      <span class="text-secondary-60">(880)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        900+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 2,250
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 2,800</del></span
-                      >
-                    </p>
+                        <span class="text-secondary-60">(880)</span
+                        ><sapn class="border-start ps-3 ms-3">
+                          900+ 個已訂購</sapn
+                        >
+                      </p>
+                      <p>
+                        <span class="fs-7 fw-bold text-primary-100 d-block">
+                          NT$ 2,250
+                        </span>
+                        <span class="fs-9 text-secondary-60"
+                          ><del>NT$ 2,800</del></span
+                        >
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-3.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold mb-2">
-                      黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >專業導覽
+                <div class="swiper-slide">
+                  <div class="card border-0 position-relative">
+                    <button
+                      type="button"
+                      class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                    >
+                      <span class="material-icons-outlined">
+                        favorite_border
                       </span>
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >5 天前可免費取消</span
-                      >
+                    </button>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-3.png?raw=true"
+                      class="card-img-top rounded-4 mb-4"
+                      alt="..."
+                    />
+                    <div>
+                      <h4 class="fs-8 fw-bold mb-2">
+                        黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                      </h4>
+                      <div class="d-flex mb-2">
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >專業導覽
+                        </span>
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >5 天前可免費取消</span
+                        >
+                      </div>
+                      <p class="fs-9 pb-4 mb-4 border-bottom">
+                        <span
+                          ><img
+                            src="../assets/images/star.svg"
+                            alt=""
+                          />4.6</span
+                        >
+                        <span class="text-secondary-60">(540)</span
+                        ><sapn class="border-start ps-3 ms-3">
+                          700+ 個已訂購</sapn
+                        >
+                      </p>
+                      <p>
+                        <span class="fs-7 fw-bold text-primary-100 d-block">
+                          NT$ 1,580
+                        </span>
+                        <span class="fs-9 text-secondary-60"
+                          ><del>NT$ 2,500</del></span
+                        >
+                      </p>
                     </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.6</span
-                      >
-                      <span class="text-secondary-60">(540)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        700+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 1,580
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 2,500</del></span
-                      >
-                    </p>
                   </div>
                 </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-4.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold mb-2">
-                      大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >即買即用
+                <div class="swiper-slide">
+                  <div class="card border-0 position-relative">
+                    <button
+                      type="button"
+                      class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                    >
+                      <span class="material-icons-outlined">
+                        favorite_border
                       </span>
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >7天前可免費取消</span
-                      >
+                    </button>
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-4.png?raw=true"
+                      class="card-img-top rounded-4 mb-4"
+                      alt="..."
+                    />
+                    <div>
+                      <h4 class="fs-8 fw-bold mb-2">
+                        大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                      </h4>
+                      <div class="d-flex mb-2">
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >即買即用
+                        </span>
+                        <span
+                          class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                          >7天前可免費取消</span
+                        >
+                      </div>
+                      <p class="fs-9 pb-4 mb-4 border-bottom">
+                        <span
+                          ><img
+                            src="../assets/images/star.svg"
+                            alt=""
+                          />4.7</span
+                        >
+                        <span class="text-secondary-60">(319)</span
+                        ><sapn class="border-start ps-3 ms-3">
+                          600+ 個已訂購</sapn
+                        >
+                      </p>
+                      <p>
+                        <span class="fs-7 fw-bold text-primary-100 d-block">
+                          NT$ 6,890
+                        </span>
+                        <span class="fs-9 text-secondary-60"
+                          ><del>NT$ 8,890</del></span
+                        >
+                      </p>
                     </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.7</span
-                      >
-                      <span class="text-secondary-60">(319)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        600+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 6,890
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 8,890</del></span
-                      >
-                    </p>
                   </div>
                 </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-1.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold mb-2">
-                      環球影城超值一日遊｜哈利波特園區＋快速通關體驗
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >即買即用</span
-                      >
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >5 天前可免費取消</span
-                      >
-                    </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.8</span
-                      >
-                      <span class="text-secondary-60">(1029)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        1,000+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 5,480
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 6,200</del></span
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-2.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold">
-                      奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >中文導覽
-                      </span>
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >5 天前可免費取消</span
-                      >
-                    </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.7</span
-                      >
+              </div>
 
-                      <span class="text-secondary-60">(880)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        900+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 2,250
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 2,800</del></span
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-3.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold mb-2">
-                      黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >專業導覽
-                      </span>
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >5 天前可免費取消</span
-                      >
-                    </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.6</span
-                      >
-                      <span class="text-secondary-60">(540)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        700+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 1,580
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 2,500</del></span
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div>
-                <div class="card border-0 position-relative">
-                  <button
-                    type="button"
-                    class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                  >
-                    <span class="material-icons-outlined">
-                      favorite_border
-                    </span>
-                  </button>
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-4.png?raw=true"
-                    class="card-img-top rounded-4 mb-4"
-                    alt="..."
-                  />
-                  <div>
-                    <h4 class="fs-8 fw-bold mb-2">
-                      大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
-                    </h4>
-                    <div class="d-flex mb-2">
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >即買即用
-                      </span>
-                      <span
-                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                        >7天前可免費取消</span
-                      >
-                    </div>
-                    <p class="fs-9 pb-4 mb-4 border-bottom">
-                      <span
-                        ><img src="../assets/images/star.svg" alt="" />4.7</span
-                      >
-                      <span class="text-secondary-60">(319)</span
-                      ><sapn class="border-start ps-3 ms-3">
-                        600+ 個已訂購</sapn
-                      >
-                    </p>
-                    <p>
-                      <span class="fs-7 fw-bold text-primary-100 d-block">
-                        NT$ 6,890
-                      </span>
-                      <span class="fs-9 text-secondary-60"
-                        ><del>NT$ 8,890</del></span
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div></swiper-slide
-            >
-          </swiper-container>
+              <!-- 分頁 -->
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 左右箭頭（放在外層容器裡） -->
+            <div class="swiper-button-prev custom-prev">
+              <span class="material-symbols-outlined"> arrow_back </span>
+            </div>
+            <div class="swiper-button-next custom-next">
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+          </div>
         </div>
       </section>
       <section class="container-fliud position-relative py-7 py-lg-10">
@@ -589,7 +381,9 @@
             來自 ZOBAA 的大阪推薦
           </h2>
           <nav>
-            <ul class="d-flex gap-7 pb-4 border-bottom tourism">
+            <ul
+              class="d-flex flex-wrap flex-lg-nowrap gap-lg-7 gap-6 pb-4 border-bottom tourism"
+            >
               <li>
                 <a href="#" class="active">觀光行程</a>
               </li>
@@ -600,225 +394,430 @@
             </ul>
           </nav>
         </div>
-        <button
-          type="button"
-          class="btn button-prev star-0 top-50 shadow position-absolute border-0 d-none d-lg-block"
-        >
-          <span class="material-symbols-outlined"> arrow_back </span>
-        </button>
-        <button
-          type="button"
-          class="button-next end-0 top-50 shadow position-absolute border-0 d-none d-lg-block"
-        >
-          <span class="material-symbols-outlined"> arrow_forward </span>
-        </button>
-        <swiper-container
-          class="mySwiper container position-relative z-1"
-          slides-per-view="4"
-          initial-slide="0"
-          space-between="24"
-          pagination="false"
-          pagination-type="fraction"
-          navigation="false"
-        >
-          <swiper-slide
-            ><div>
-              <div class="card border-0 position-relative">
-                <button
-                  type="button"
-                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                >
-                  <span class="material-icons-outlined"> favorite_border </span>
-                </button>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-1.png?raw=true"
-                  class="card-img-top rounded-4 mb-4"
-                  alt="..."
-                />
-                <div>
-                  <h4 class="fs-8 fw-bold mb-2">
-                    環球影城超值一日遊｜哈利波特園區＋快速通關體驗
-                  </h4>
-                  <div class="d-flex mb-2">
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >即買即用</span
-                    >
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >5 天前可免費取消</span
-                    >
-                  </div>
-                  <p class="fs-9 pb-4 mb-4 border-bottom">
-                    <span
-                      ><img src="../assets/images/star.svg" alt="" />4.8</span
-                    >
-                    <span class="text-secondary-60">(1029)</span
-                    ><sapn class="border-start ps-3 ms-3">
-                      1,000+ 個已訂購</sapn
-                    >
-                  </p>
-                  <p>
-                    <span class="fs-7 fw-bold text-primary-100 d-block">
-                      NT$ 5,480
+        <div class="swiper-container container">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card border-0 position-relative">
+                  <button
+                    type="button"
+                    class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
                     </span>
-                    <span class="fs-9 text-secondary-60"
-                      ><del>NT$ 6,200</del></span
-                    >
-                  </p>
+                  </button>
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-1.png?raw=true"
+                    class="card-img-top rounded-4 mb-4"
+                    alt="..."
+                  />
+                  <div>
+                    <h4 class="fs-8 fw-bold mb-2">
+                      環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                    </h4>
+                    <div class="d-flex mb-2">
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >即買即用</span
+                      >
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <p class="fs-9 pb-4 mb-4 border-bottom">
+                      <span
+                        ><img src="../assets/images/star.svg" alt="" />4.8</span
+                      >
+                      <span class="text-secondary-60">(1029)</span
+                      ><sapn class="border-start ps-3 ms-3">
+                        1,000+ 個已訂購</sapn
+                      >
+                    </p>
+                    <p>
+                      <span class="fs-7 fw-bold text-primary-100 d-block">
+                        NT$ 5,480
+                      </span>
+                      <span class="fs-9 text-secondary-60"
+                        ><del>NT$ 6,200</del></span
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div>
-              <div class="card border-0 position-relative">
-                <button
-                  type="button"
-                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                >
-                  <span class="material-icons-outlined"> favorite_border </span>
-                </button>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-2.png?raw=true"
-                  class="card-img-top rounded-4 mb-4"
-                  alt="..."
-                />
-                <div>
-                  <h4 class="fs-8 fw-bold">
-                    奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
-                  </h4>
-                  <div class="d-flex mb-2">
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >中文導覽
+              <div class="swiper-slide">
+                <div class="card border-0 position-relative">
+                  <button
+                    type="button"
+                    class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
                     </span>
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >5 天前可免費取消</span
-                    >
-                  </div>
-                  <p class="fs-9 pb-4 mb-4 border-bottom">
-                    <span
-                      ><img src="../assets/images/star.svg" alt="" />4.7</span
-                    >
+                  </button>
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-2.png?raw=true"
+                    class="card-img-top rounded-4 mb-4"
+                    alt="..."
+                  />
+                  <div>
+                    <h4 class="fs-8 fw-bold">
+                      奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                    </h4>
+                    <div class="d-flex mb-2">
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >中文導覽
+                      </span>
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <p class="fs-9 pb-4 mb-4 border-bottom">
+                      <span
+                        ><img src="../assets/images/star.svg" alt="" />4.7</span
+                      >
 
-                    <span class="text-secondary-60">(880)</span
-                    ><sapn class="border-start ps-3 ms-3"> 900+ 個已訂購</sapn>
-                  </p>
-                  <p>
-                    <span class="fs-7 fw-bold text-primary-100 d-block">
-                      NT$ 2,250
-                    </span>
-                    <span class="fs-9 text-secondary-60"
-                      ><del>NT$ 2,800</del></span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div>
-              <div class="card border-0 position-relative">
-                <button
-                  type="button"
-                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                >
-                  <span class="material-icons-outlined"> favorite_border </span>
-                </button>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-3.png?raw=true"
-                  class="card-img-top rounded-4 mb-4"
-                  alt="..."
-                />
-                <div>
-                  <h4 class="fs-8 fw-bold mb-2">
-                    黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
-                  </h4>
-                  <div class="d-flex mb-2">
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >專業導覽
-                    </span>
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >5 天前可免費取消</span
-                    >
+                      <span class="text-secondary-60">(880)</span
+                      ><sapn class="border-start ps-3 ms-3">
+                        900+ 個已訂購</sapn
+                      >
+                    </p>
+                    <p>
+                      <span class="fs-7 fw-bold text-primary-100 d-block">
+                        NT$ 2,250
+                      </span>
+                      <span class="fs-9 text-secondary-60"
+                        ><del>NT$ 2,800</del></span
+                      >
+                    </p>
                   </div>
-                  <p class="fs-9 pb-4 mb-4 border-bottom">
-                    <span
-                      ><img src="../assets/images/star.svg" alt="" />4.6</span
-                    >
-                    <span class="text-secondary-60">(540)</span
-                    ><sapn class="border-start ps-3 ms-3"> 700+ 個已訂購</sapn>
-                  </p>
-                  <p>
-                    <span class="fs-7 fw-bold text-primary-100 d-block">
-                      NT$ 1,580
-                    </span>
-                    <span class="fs-9 text-secondary-60"
-                      ><del>NT$ 2,500</del></span
-                    >
-                  </p>
                 </div>
               </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div>
-              <div class="card border-0 position-relative">
-                <button
-                  type="button"
-                  class="btn position-absolute top-0 end-0 border-0 text-white p-4 fs-6"
-                >
-                  <span class="material-icons-outlined"> favorite_border </span>
-                </button>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-4.png?raw=true"
-                  class="card-img-top rounded-4 mb-4"
-                  alt="..."
-                />
-                <div>
-                  <h4 class="fs-8 fw-bold mb-2">
-                    大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
-                  </h4>
-                  <div class="d-flex mb-2">
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >即買即用
+              <div class="swiper-slide">
+                <div class="card border-0 position-relative">
+                  <button
+                    type="button"
+                    class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
                     </span>
-                    <span
-                      class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
-                      >7天前可免費取消</span
-                    >
+                  </button>
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-3.png?raw=true"
+                    class="card-img-top rounded-4 mb-4"
+                    alt="..."
+                  />
+                  <div>
+                    <h4 class="fs-8 fw-bold mb-2">
+                      黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                    </h4>
+                    <div class="d-flex mb-2">
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >專業導覽
+                      </span>
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >5 天前可免費取消</span
+                      >
+                    </div>
+                    <p class="fs-9 pb-4 mb-4 border-bottom">
+                      <span
+                        ><img src="../assets/images/star.svg" alt="" />4.6</span
+                      >
+                      <span class="text-secondary-60">(540)</span
+                      ><sapn class="border-start ps-3 ms-3">
+                        700+ 個已訂購</sapn
+                      >
+                    </p>
+                    <p>
+                      <span class="fs-7 fw-bold text-primary-100 d-block">
+                        NT$ 1,580
+                      </span>
+                      <span class="fs-9 text-secondary-60"
+                        ><del>NT$ 2,500</del></span
+                      >
+                    </p>
                   </div>
-                  <p class="fs-9 pb-4 mb-4 border-bottom">
-                    <span
-                      ><img src="../assets/images/star.svg" alt="" />4.7</span
-                    >
-                    <span class="text-secondary-60">(319)</span
-                    ><sapn class="border-start ps-3 ms-3"> 600+ 個已訂購</sapn>
-                  </p>
-                  <p>
-                    <span class="fs-7 fw-bold text-primary-100 d-block">
-                      NT$ 6,890
-                    </span>
-                    <span class="fs-9 text-secondary-60"
-                      ><del>NT$ 8,890</del></span
-                    >
-                  </p>
                 </div>
               </div>
-            </div></swiper-slide
+              <div class="swiper-slide">
+                <div class="card border-0 position-relative">
+                  <button
+                    type="button"
+                    class="btn position-absolute top-0 end-0 border-0 text-white favorite-btn p-4 fs-6"
+                  >
+                    <span class="material-icons-outlined">
+                      favorite_border
+                    </span>
+                  </button>
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/top-4.png?raw=true"
+                    class="card-img-top rounded-4 mb-4"
+                    alt="..."
+                  />
+                  <div>
+                    <h4 class="fs-8 fw-bold mb-2">
+                      大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                    </h4>
+                    <div class="d-flex mb-2">
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >即買即用
+                      </span>
+                      <span
+                        class="text-primary-100 bg-primary-10 rounded-1 py-1 px-2 fs-9 me-2"
+                        >7天前可免費取消</span
+                      >
+                    </div>
+                    <p class="fs-9 pb-4 mb-4 border-bottom">
+                      <span
+                        ><img src="../assets/images/star.svg" alt="" />4.7</span
+                      >
+                      <span class="text-secondary-60">(319)</span
+                      ><sapn class="border-start ps-3 ms-3">
+                        600+ 個已訂購</sapn
+                      >
+                    </p>
+                    <p>
+                      <span class="fs-7 fw-bold text-primary-100 d-block">
+                        NT$ 6,890
+                      </span>
+                      <span class="fs-9 text-secondary-60"
+                        ><del>NT$ 8,890</del></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 分頁 -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- 左右箭頭（放在外層容器裡） -->
+          <div class="swiper-button-prev custom-prev">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </div>
+          <div class="swiper-button-next custom-next">
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-10 py-lg-11 py-7">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between mb-lg-7 mb-5"
           >
-        </swiper-container>
+            <h2 class="fs-lg-2 fs-4 text-primary-100 fw-bold mb-2">
+              旅人攻略<br />
+              看看大家怎麼玩！
+            </h2>
+            <p class="fs-lg-7 fs-8 text-primary-100 fw-bold mb-7">
+              這裡不只是遊記，更是來自旅人親身經歷的風格指南與靈感筆記。<br />
+              跟著他們的腳步走，找到屬於你的旅行意義。
+            </p>
+          </div>
+          <div>
+            <div class="strategy">
+              <div
+                class="card d-flex flex-column flex-lg-row justify-content-center p-6 h-100 mb-6"
+              >
+                <div class="row">
+                  <div class="map col-lg-5">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/guide-1.png?raw=true"
+                      class="card-img-top object-fit-cover rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="pt-2 col-lg-7">
+                    <div class="mb-6">
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #大阪
+                      </button>
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #老街巡禮
+                      </button>
+                    </div>
+                    <h4 class="fs-5 fs-lg-3 fw-bold mb-2">
+                      空堀商店街的散步節奏
+                    </h4>
+                    <p class="fs-9 fs-lg-8 mb-7">
+                      離開熱鬧難波，走進空堀這座時間凍結的老街，每家店都像一段回憶：木造喫茶、手工小物、安靜的巷弄轉角。這裡沒有觀光氣氛，只有城市最真實的日常樣貌...
+                    </p>
+                    <button
+                      type="button"
+                      class="btn d-flex justify-content-end align-items-center w-100 rounded-pill py-4 px-5"
+                    >
+                      <span class="fs-9 fs-lg-8 fw-bold me-2">查看文章</span>
+                      <span
+                        class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                      >
+                        arrow_forward
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card d-flex flex-column flex-lg-row justify-content-center p-6 h-100 mb-6"
+              >
+                <div class="row">
+                  <div class="map col-lg-5">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/guide-2.png?raw=true"
+                      class="card-img-top object-fit-cover rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="pt-2 col-lg-7">
+                    <div class="mb-6">
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #大阪
+                      </button>
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #庶民美食
+                      </button>
+                    </div>
+                    <h4 class="fs-5 fs-lg-3 fw-bold mb-2">
+                      深夜的章魚燒與便利商店啤酒
+                    </h4>
+                    <p class="fs-9 fs-lg-8 mb-7">
+                      難波站邊的小巷，有開到凌晨的章魚燒老店。坐在路邊配一罐便利商店啤酒，看路人談天、喝醉、笑鬧，這種庶民感才是我最懷念的大阪味道。
+                    </p>
+                    <button
+                      type="button"
+                      class="btn d-flex justify-content-end align-items-center w-100 rounded-pill py-4 px-5"
+                    >
+                      <span class="fs-9 fs-lg-8 fw-bold me-2">查看文章</span>
+                      <span
+                        class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                      >
+                        arrow_forward
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card d-flex flex-column flex-lg-row justify-content-center p-6 h-100 mb-6"
+              >
+                <div class="row">
+                  <div class="map col-lg-5">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/guide-3.png?raw=true"
+                      class="card-img-top object-fit-cover rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="pt-2 col-lg-7">
+                    <div class="mb-6">
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #大阪
+                      </button>
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #靜態旅行
+                      </button>
+                    </div>
+                    <h4 class="fs-5 fs-lg-3 fw-bold mb-2">
+                      一個人在中之島圖書館待一整天
+                    </h4>
+                    <p class="fs-9 fs-lg-8 mb-7">
+                      陰天的中之島很安靜，我選擇在百年圖書館裡消磨一整天。閱讀、打盹、寫明信片，從高聳書架與拱形窗邊找到片刻的呼吸空間。不趕行程的日子，才最像我想要的旅途。
+                    </p>
+                    <button
+                      type="button"
+                      class="btn d-flex justify-content-end align-items-center w-100 rounded-pill py-4 px-5"
+                    >
+                      <span class="fs-9 fs-lg-8 fw-bold me-2">查看文章</span>
+                      <span
+                        class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                      >
+                        arrow_forward
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card d-flex flex-column flex-lg-row justify-content-center p-6 h-100 mb-6"
+              >
+                <div class="row">
+                  <div class="map col-lg-5">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/location/guide-4.png?raw=true"
+                      class="card-img-top object-fit-cover rounded-4"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="pt-2 col-lg-7">
+                    <div class="mb-6">
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #大阪
+                      </button>
+                      <button
+                        class="btn btn-primary-10 fs-9 fw-bold text-primary-100"
+                        type="button"
+                      >
+                        #在地文化
+                      </button>
+                    </div>
+                    <h4 class="fs-5 fs-lg-3 fw-bold mb-2">
+                      跟著在地人玩「新世界」
+                    </h4>
+                    <p class="fs-9 fs-lg-8 mb-7">
+                      走進「新世界」，才發現大阪有多狂、有多生活。串炸店裡全是吆喝聲、立吞店排滿上班族，還有拍不完的霓虹與搞笑招牌。這一區又亂又熱鬧，但真實又迷人。
+                    </p>
+                    <button
+                      type="button"
+                      class="btn d-flex justify-content-end align-items-center w-100 rounded-pill py-4 px-5"
+                    >
+                      <span class="fs-9 fs-lg-8 fw-bold me-2">查看文章</span>
+                      <span
+                        class="material-icons-outlined p-1 text-black rounded-circle bg-white"
+                      >
+                        arrow_forward
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <%- include('./layout/footer'); -%>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <script type="module" src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
