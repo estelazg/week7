@@ -1,11 +1,11 @@
+import Swiper from "swiper";
+import "swiper/css";
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 console.log("Hello world");
 
 // 引入 Swiper core 與樣式
-import Swiper from "swiper";
-import "swiper/css";
 
 // 如果要用 Pagination、Navigation
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
     },
     autoplay: {
       delay: 3000,

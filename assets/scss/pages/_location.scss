@@ -55,42 +55,35 @@
 }
 
 /* 基本位置 */
-.swiper-button-prev,
-.swiper-button-next {
+.button-prev,
+.button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
-  padding: 20px;
+  padding: 18px;
   border-radius: 12px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   color: $primary-100; /* SVG 顏色 */
-  filter: $primary-100;
 }
 
 /* 左右位置 */
-.swiper-button-prev {
-  left: -50px;
+.button-prev {
+  left: -80px;
 }
-.swiper-button-next {
-  right: -50px;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
+.button-next {
+  right: -80px;
 }
 
-/* hover 效果 */
-// .swiper-button-prev:hover,
-// .swiper-button-next:hover {
-//   background: $primary-100; /* 你可以改成主色 */
-//   color: #fff;
-//   transform: translateY(-50%) scale(1.1);
-// }
+@media (min-width: 992px) {
+  .button-next,
+  .button-prev {
+    display: none !important;
+  }
+}
 
 .Strategy {
   .card {
