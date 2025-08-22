@@ -68,6 +68,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   color: $primary-100; /* SVG 顏色 */
+  display: none;
 }
 
 /* 左右位置 */
@@ -81,7 +82,7 @@
 @media (min-width: 992px) {
   .button-next,
   .button-prev {
-    display: none !important;
+    display: block !important;
   }
 }
 
