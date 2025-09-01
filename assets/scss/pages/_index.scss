@@ -84,6 +84,21 @@
   }
 }
 
+.btn-arrow-back {
+  .material-symbols-outlined {
+    color: $primary-100;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+.btn-arrow-forward {
+  .material-symbols-outlined {
+    color: $primary-100;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
 @media (min-width: 992px) {
   .recommend .card {
     width: 25%;
